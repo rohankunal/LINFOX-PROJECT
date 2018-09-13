@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+     <link rel="stylesheet" href="mystyle.css">
+    <body>
+    
+         <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openslidemenu()">
+          
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" STROKE="#fff"
+                  stroke-width="5"/>
+            <path d="M0,14 30,14" STROKE="#fff"
+                  stroke-width="5"/>
+            <path d="M0,23 30,23" STROKE="#fff"
+                  stroke-width="5"/>
+            </svg>        
+        </a> 
+        </span>
+            <ul class="navbar-nav">
+             <button class="open-button" onclick="openForm()">LOGIN</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+    
+
+    <label for="email"><b>Employee I'd</b></label>
+    <input type="text" placeholder="Enter Employee I'd" name="email" required>
+    
+
+    <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+    
+
+    <button type="submit" class="btn">Login</button>
+      
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+        
+        </ul>
+               
+             
+    </nav>
+        
+        <div class="floor">
+        <img src="IMAGES/floorplan.png" width="900px" height="550px">
+        </div>
+        
+    <div id="side-menu" class="side-nav">
+            
+        <a href="#" class="btn-close" onclick="closeslidemenu()">&times;</a>
+        
+<div class="popbutton">
+     
+    <a href="#">ASSET'S</a>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">F102</button><br>
+    <br>
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">F104</button><br>
+    <br>
+     <button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">F106</button><br>
+    <br>
+     <button onclick="document.getElementById('id04').style.display='block'" style="width:auto;">F008</button><br>
+    <br>
+     <button onclick="document.getElementById('id05').style.display='block'" style="width:auto;">F010</button><br>
+    <br>
+     <button onclick="document.getElementById('id06').style.display='block'" style="width:auto;">F012</button><br>
+    <br>
+    <button onclick="document.getElementById('id07').style.display='block'" style="width:auto;">F014</button><br>
+    <br>
+    <button onclick="document.getElementById('id08').style.display='block'" style="width:auto;">F016</button><br>
+    <br>
+    <button onclick="document.getElementById('id09').style.display='block'" style="width:auto;">F018</button><br>
+    <br>
+    <button onclick="document.getElementById('id10').style.display='block'" style="width:auto;">F020</button><br>
+    <br>
+    <button onclick="document.getElementById('id11').style.display='block'" style="width:auto;">S002</button><br>
+    <br>
+    <button onclick="document.getElementById('id12').style.display='block'" style="width:auto;">S004V</button><br>
+    <br>
+    <button onclick="document.getElementById('id13').style.display='block'" style="width:auto;">S006</button><br>
+    <br>
+    <button onclick="document.getElementById('id14').style.display='block'" style="width:auto;">S008</button><br>
+    <br>
+    <button onclick="document.getElementById('id15').style.display='block'" style="width:auto;">S010</button><br>
+    <br>
+    <button onclick="document.getElementById('id16').style.display='block'" style="width:auto;">S012</button><br>
+    <br>
+    <button onclick="document.getElementById('id17').style.display='block'" style="width:auto;">S014</button><br>
+    <br>
+    <button onclick="document.getElementById('id18').style.display='block'" style="width:auto;">S106</button><br>
+    <br>
+    <button onclick="document.getElementById('id19').style.display='block'" style="width:auto;">S018</button><br>
+    <br>
+    <button onclick="document.getElementById('id20').style.display='block'" style="width:auto;">S020</button><br>
+    <br>
+    <button onclick="document.getElementById('id21').style.display='block'" style="width:auto;">S022</button><br>
+    <br>
+    <button onclick="document.getElementById('id22').style.display='block'" style="width:auto;">S024</button><br>
+    <br>
+    <button onclick="document.getElementById('id23').style.display='block'" style="width:auto;">S026</button><br>
+    <br>
+    <button onclick="document.getElementById('id24').style.display='block'" style="width:auto;">S028</button><br>
+    <br>
+     <button onclick="document.getElementById('id25').style.display='block'" style="width:auto;">S030</button><br>
+    <br>
+     <button onclick="document.getElementById('id26').style.display='block'" style="width:auto;">S032</button><br>
+    <br>
+     <button onclick="document.getElementById('id27').style.display='block'" style="width:auto;">S034</button><br>
+    <br>
+     <button onclick="document.getElementById('id28').style.display='block'" style="width:auto;">S036</button><br>
+    <br>
+     <button onclick="document.getElementById('id29').style.display='block'" style="width:auto;">S038</button><br>
+    <br>
+</div>
+        <br>
+        <ul>
+        </ul>
+        
+      <div id="id01" class="modal">
+        
+  
+  <form class="modal-content animate" action="/action_page.php">
+         
+      <h1 class="modelheader"> <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>F102</h1>
+      
+
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+     
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		
+   <a href="https://www.linfox.com/html/">LINFOX</a>
+        
+      <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+    </div>
+
+   
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+          <div id="id02" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>F104</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        <div id="id03" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>F106</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        <div id="id04" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>F008</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id05" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>F010</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id05').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        <div id="id06" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id06').style.display='none'" class="close" title="Close Modal">&times;</span>F012</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id06').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        <div id="id07" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id07').style.display='none'" class="close" title="Close Modal">&times;</span>F014</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id07').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        <div id="id08" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id08').style.display='none'" class="close" title="Close Modal">&times;</span>F016</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id08').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id09" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id09').style.display='none'" class="close" title="Close Modal">&times;</span>F018</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id09').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        <div id="id10" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id10').style.display='none'" class="close" title="Close Modal">&times;</span>F020</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id10').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        <div id="id11" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id11').style.display='none'" class="close" title="Close Modal">&times;</span>S002</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id11').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id12" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id12').style.display='none'" class="close" title="Close Modal">&times;</span>S004v</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id12').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id13" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id13').style.display='none'" class="close" title="Close Modal">&times;</span>S006</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id13').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id14" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id14').style.display='none'" class="close" title="Close Modal">&times;</span>S008</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id14').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        <div id="id15" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id15').style.display='none'" class="close" title="Close Modal">&times;</span>S010</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id15').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        <div id="id16" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id16').style.display='none'" class="close" title="Close Modal">&times;</span>S012</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id16').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        <div id="id17" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id17').style.display='none'" class="close" title="Close Modal">&times;</span>S014</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id17').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id18" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id18').style.display='none'" class="close" title="Close Modal">&times;</span>S106</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id18').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id19" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id19').style.display='none'" class="close" title="Close Modal">&times;</span>S018</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id19').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        <div id="id20" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id20').style.display='none'" class="close" title="Close Modal">&times;</span>S020</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id20').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id21" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id21').style.display='none'" class="close" title="Close Modal">&times;</span>S022</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id21').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id22" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id22').style.display='none'" class="close" title="Close Modal">&times;</span>S024</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id22').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id23" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id23').style.display='none'" class="close" title="Close Modal">&times;</span>S026</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id23').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id24" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id24').style.display='none'" class="close" title="Close Modal">&times;</span>S028</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id24').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        <div id="id25" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id25').style.display='none'" class="close" title="Close Modal">&times;</span>S030</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id25').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id26" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id26').style.display='none'" class="close" title="Close Modal">&times;</span>S032</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id026').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id27" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id27').style.display='none'" class="close" title="Close Modal">&times;</span>S034</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id27').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="id28" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id28').style.display='none'" class="close" title="Close Modal">&times;</span>S036</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id28').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+          <div id="id29" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <h1 class="modelheader"> <span onclick="document.getElementById('id29').style.display='none'" class="close" title="Close Modal">&times;</span>S038</h1>
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Enter name" name="uname" required>
+		<label for="uname"><b>Material Type:</b></label>
+      <input type="text" placeholder="Enter materials" name="uname" required>
+		<label for="uname"><b>Sub Component name:</b></label>
+      <input type="text" placeholder="Material Type" name="uname" required>
+        <br>
+		<label for="uname"><b>Attach document here:</b></label>
+        <br>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
+        <br>
+        <br>
+		 <a href="https://www.linfox.com/html/">LINFOX</a>
+        <button type="submit">Submit</button>
+       <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id29').style.display='none'" class="cancelbtn">Cancel</button> 
+    </div>
+    </div>
+  </form>
+</div>  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<script>
+    function openslidemenu(){
+        document.getElementById('side-menu').style.width= '250px';
+        document.getElementById('main').style.marginLeft= '250px';
+    }
+         function closeslidemenu(){
+        document.getElementById('side-menu').style.width= '0';
+        document.getElementById('main').style.marginLeft= '0';
+    }
+    
+    </script>
+	
+        
+        
+        
+        
+
+        <script>
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+         <script>
+var modal = document.getElementById('id02');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+         <script>
+var modal = document.getElementById('id03');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        <script>
+var modal = document.getElementById('id04');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        <script>
+var modal = document.getElementById('id05');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        <script>
+var modal = document.getElementById('id06');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id07');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id08');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id09');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id10');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id11');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id12');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id13');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id14');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        <script>
+var modal = document.getElementById('id15');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id16');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id17');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id18');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id19');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id20');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id21');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id22');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id23');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id24');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id25');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id26');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+        
+        
+        <script>
+var modal = document.getElementById('id27');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+         <script>
+var modal = document.getElementById('id28');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+         <script>
+var modal = document.getElementById('id29');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        </script>
+        
+        
+        
+
+        
+
+        <script src="main.js"></script>
+    <script>
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+</script>    
+        
+        
+    </body>
+    </html>
